@@ -28,7 +28,7 @@
               "RelativeDocumentMoniker": "routes\\users.js",
               "ToolTip": "C:\\Dev\\Unity\\tictactoe-server\\routes\\users.js",
               "RelativeToolTip": "routes\\users.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAAAFgAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-09-05T01:24:53.311Z",
               "EditorCaption": ""
@@ -43,7 +43,8 @@
               "RelativeToolTip": "app.js",
               "ViewState": "AgIAAAYAAAAAAAAAAAAIwBcAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-09-05T00:52:52.084Z"
+              "WhenOpened": "2025-09-05T00:52:52.084Z",
+              "EditorCaption": ""
             }
           ]
         }
