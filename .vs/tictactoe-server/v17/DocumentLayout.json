@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Dev\\Unity\\tictactoe-server\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Dev\\Unity\\tictactoe-server\\game.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:game.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Dev\\Unity\\tictactoe-server\\bin\\www||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:bin\\www||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Dev\\Unity\\tictactoe-server\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Dev\\Unity\\tictactoe-server\\routes\\users.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:routes\\users.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
@@ -18,24 +30,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "www",
+              "DocumentMoniker": "C:\\Dev\\Unity\\tictactoe-server\\bin\\www",
+              "RelativeDocumentMoniker": "bin\\www",
+              "ToolTip": "C:\\Dev\\Unity\\tictactoe-server\\bin\\www",
+              "RelativeToolTip": "bin\\www",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-09-08T04:23:20.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Dev\\Unity\\tictactoe-server\\package.json",
+              "RelativeDocumentMoniker": "package.json",
+              "ToolTip": "C:\\Dev\\Unity\\tictactoe-server\\package.json",
+              "RelativeToolTip": "package.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-08T04:07:29.462Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "game.js",
+              "DocumentMoniker": "C:\\Dev\\Unity\\tictactoe-server\\game.js",
+              "RelativeDocumentMoniker": "game.js",
+              "ToolTip": "C:\\Dev\\Unity\\tictactoe-server\\game.js",
+              "RelativeToolTip": "game.js",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-09-08T04:20:30.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "users.js",
               "DocumentMoniker": "C:\\Dev\\Unity\\tictactoe-server\\routes\\users.js",
               "RelativeDocumentMoniker": "routes\\users.js",
               "ToolTip": "C:\\Dev\\Unity\\tictactoe-server\\routes\\users.js",
               "RelativeToolTip": "routes\\users.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwLgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-09-05T01:24:53.311Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T01:24:53.311Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "app.js",
               "DocumentMoniker": "C:\\Dev\\Unity\\tictactoe-server\\app.js",
               "RelativeDocumentMoniker": "app.js",
