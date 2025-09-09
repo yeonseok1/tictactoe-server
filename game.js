@@ -1,21 +1,24 @@
+const f = require('session-file-store');
 const { v4: uuidv4 } = require('uuid');
 
-module.exports = function(server) {
+module.exports = function (server) {
 
     const io = require('socket.io')(server, {
         transports: ['websocket']
     });
 
     // 방 정보
-    var rooms = [];                 // 대기방
-    var socketRooms = new Map();    // 진행방
+    var rooms = [];                     // 게임 대기방
+    var socketRooms = new Map();        // 게임 진행방
 
     io.on('connection', (socket) => {
 
         // 서버 구현
         console.log('A user connected:', socket.id);
 
-        // 입장
+        // 특정 Socket(클라이언트)이 방에 입장했을 때 처리
+        // 1. 대기방에 방이 있으면 입장
+        // 2. 대기방에 방이 없으면 새로 생성 후 입장
         if (rooms.length > 0) {
             var roomId = rooms.shift();
             socket.join(roomId);
@@ -30,25 +33,25 @@ module.exports = function(server) {
             socketRooms.set(socket.id, roomId);
         }
 
-        // 퇴장
+        // 특정 Socket(클라이언트)이 방을 나갔을 때 처리
         socket.on('leaveRoom', function (data) {
-            var roomIJd = data.roomId;
+            var roomId = data.roomId;
             socket.leave(roomId);
             socket.emit('exitRoom');
             socket.to(roomId).emit('endGame');
 
-            // 혼자 들어간 방 나갈 때
+            // 혼자 들어간 방에서 나갈 때 방 삭제
             const roomIdx = rooms.indexOf(roomId);
             if (roomIdx !== -1) {
                 rooms.splice(roomIdx, 1);
                 console.log('Room deleted:', roomId);
             }
 
-            // 나간 방 소켓 정보 삭제
+            // 방 나간 소켓 정보 삭제
             socketRooms.delete(socket.id);
         });
 
-        // 특정 block을 터치했을 때
+        // 소켓(클라이언트) 특정 Block을 터치했을 때 처리
         socket.on('doPlayer', function (playerInfo) {
             var roomId = playerInfo.roomId;
             var blockIndex = playerInfo.blockIndex;
@@ -57,5 +60,8 @@ module.exports = function(server) {
             socket.to(roomId).emit('doOpponent', { blockIndex: blockIndex });
         });
 
+        socket.on('disconnect', function (reason) {
+            console.log('Disconnected: ' + socket.id + ' Reason:' + reason);
+        });
     });
 };
